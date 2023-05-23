@@ -1,4 +1,6 @@
 #include "monty.h"
+extern stack_t *head;
+
 void free_stack(stack_t **head)
 {
 	stack_t *current = *head;
