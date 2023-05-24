@@ -8,8 +8,8 @@
  */
 char *strtok_custom(char *str, const char *delim)
 {
-	char *token = NULL;
-	char *last = NULL;
+	static char *token;
+	static char *last;
 
 	if (str != NULL)
 	{
@@ -25,3 +25,4 @@ char *strtok_custom(char *str, const char *delim)
 	}
 
 	return (token);
+}
