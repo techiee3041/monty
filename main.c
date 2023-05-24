@@ -7,6 +7,7 @@ extern stack_t *head;
  *
  * Return: 0 on success, otherwise EXIT_FAILURE
  */
+stack_t *head = NULL;
 int main(int argc, char *argv[])
 {
 	if (argc != 2)
