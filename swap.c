@@ -10,11 +10,13 @@ void swap(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE);
 	}
 
-	temp = *head;
+	temp = (*head)->next;
+	(*head)->next = temp->next;
+	temp->next = *head;
+	temp->prev = NULL;
+	(*head)->prev = temp;
+
+	*head = temp;
+
 	
-	if (*head != NULL)
-	{
-		(*head)->next = temp;
-		temp = (*head)->next;
-	} 
-}
+}	

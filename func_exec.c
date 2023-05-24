@@ -51,6 +51,10 @@ void execute_instructions(char *file_name)
         {
             instruction.f = pop;
         }
+	else if (strcmp(op, "swap") == 0)
+	{
+		instruction.f = swap;
+	}
         else
         {
             printf("L%d: unknown instruction %s\n", counter, op);
