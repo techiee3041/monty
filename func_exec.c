@@ -71,6 +71,10 @@ void execute_instructions(char *file_name)
 		{
 			instruction.f = pint;
 		}
+	else if (strcmp(op, "pop") == 0)
+	{
+		instruction.f = pop;
+	}
         else
         {
             printf("L%d: unknown instruction %s\n", counter, op);

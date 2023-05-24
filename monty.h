@@ -48,6 +48,6 @@ void push(stack_t **head, unsigned int line_number);
 void execute_instructions(char *file_name);
 void free_stack(stack_t **head);
 void pint(stack_t **head, unsigned int counter);
-
+void pop(stack_t **head, unsigned int counter);
 #endif
 
