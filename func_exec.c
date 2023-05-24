@@ -22,27 +22,28 @@ void execute_instructions(char *file_name)
 		fprintf(stderr, "Error: Can't open file %s\n", file_name);
 		exit(EXIT_FAILURE);
 	}
-
     while (fgets(line, sizeof(line), fd))
     {
-		counter++;
-		op = strtok_custom(line, " \t\n$");
-		if (op == NULL)
-			continue;
+        counter++;
+        op = strtok_custom(line, " \t\n$");
+        if (op == NULL)
+            continue;
+        instruction.opcode = op;
 
-			instruction.opcode = op;
-		if (strcmp(op, "push") == 0)
-			instruction.f = push;
-		else if (strcmp(op, "pall") == 0)
-			instruction.f = pall;
+        if (strcmp(op, "push") == 0)
+            instruction.f = push;
+        else if (strcmp(op, "pall") == 0)
+            instruction.f = pall;
         else if (strcmp(op, "pint") == 0)
             instruction.f = pint;
         else if (strcmp(op, "pop") == 0)
-			instruction.f = pop;
-		else
-			printf("L%d: unknown instruction %s\n", counter, op);
-		instruction.f(&head, counter);
-	}
-	fclose(fd);
+            instruction.f = pop;
+		else if (strcmp(op, "swap") == 0)
+			instruction.f = swap;
+        else
+            printf("L%d: unknown instruction %s\n", counter, op);
+        instruction.f(&head, counter);
+    }
+    fclose(fd);
 }
 

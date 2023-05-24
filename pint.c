@@ -4,6 +4,7 @@
  * @counter: line number
  * @head: ponter to stack
  */
+extern stack_t *head;
 void pint(stack_t **head, unsigned int counter)
 {
 	if (*head == NULL || head == NULL)
