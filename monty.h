@@ -50,6 +50,5 @@ void free_stack(stack_t **head);
 void pint(stack_t **head, unsigned int counter);
 char *strtok_custom(char *str, const char *delim);
 void pop(stack_t **head, unsigned int counter);
->>>>>>> 00af39fe54b9e1c37cef421c5c5c039f891cf488
 #endif
 

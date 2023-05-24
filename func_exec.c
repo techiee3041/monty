@@ -42,24 +42,14 @@ void execute_instructions(char *file_name)
 		{
 			instruction.f = pint;
 		}
-<<<<<<< HEAD
-	else if (strcmp(op, "pop") == 0)
-	{
+		else if (strcmp(op, "pop") == 0)
+		{
 		instruction.f = pop;
-	}
+		}
         else
         {
             printf("L%d: unknown instruction %s\n", counter, op);
         }
         instruction.f(&head, counter);
-    }
-
-=======
-		else
-		{
-			printf("L%d: unknown instruction %s\n", counter, op);
-		}
-		instruction.f(&head, counter);
 	}
->>>>>>> d7bc9d642ddc4f3e2f37ea933fe4598ce4e1527a
 }
