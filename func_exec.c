@@ -1,4 +1,5 @@
 #include "monty.h"
+
 /**
  * execute_instructions - Execute the Monty byte code instructions
  * @file_name: The path of file containing Monty byte code
@@ -38,12 +39,13 @@ void execute_instructions(char *file_name)
 		{
 			instruction.f = pall;
 		}
-		else if (strcmp(op, "pint") == 0)
+			else if (strcmp(op, "pint") == 0)
 		{
 			instruction.f = pint;
 		}
 		else if (strcmp(op, "pop") == 0)
 		{
+<<<<<<< HEAD
 		instruction.f = pop;
 		}
         else
@@ -52,4 +54,6 @@ void execute_instructions(char *file_name)
         }
         instruction.f(&head, counter);
 	}
+	fclose(fd);
 }
+
