@@ -1,9 +1,6 @@
 #include "monty.h"
-<<<<<<< HEAD
 extern stack_t *head;
-=======
 
->>>>>>> 7c48823a38e53f8d30799b5ce44fecec70033f09
 /**
  * execute_instructions - Execute the Monty byte code instructions
  * @file_name: The path of file containing Monty byte code
@@ -20,7 +17,6 @@ void execute_instructions(char *file_name)
     char *op;
     struct instruction_s instruction;
 
-<<<<<<< HEAD
     fd = fopen(file_name, "r");
     if (fd == NULL)
     {
@@ -55,7 +51,6 @@ void execute_instructions(char *file_name)
         {
             instruction.f = pop;
         }
-=======
 	fd = fopen(file_name, "r");
 	if (fd == NULL)
 	{
@@ -85,25 +80,16 @@ void execute_instructions(char *file_name)
 		}
 		else if (strcmp(op, "pop") == 0)
 		{
-<<<<<<< HEAD
 		instruction.f = pop;
 		}
->>>>>>> 7c48823a38e53f8d30799b5ce44fecec70033f09
         else
         {
             printf("L%d: unknown instruction %s\n", counter, op);
         }
 
         instruction.f(&head, counter);
-<<<<<<< HEAD
     }
 
     fclose(fd);
 }
 	
-=======
-	}
-	fclose(fd);
-}
-
->>>>>>> 7c48823a38e53f8d30799b5ce44fecec70033f09
