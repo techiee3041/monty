@@ -1,6 +1,5 @@
 #include "monty.h"
 #include <string.h>
-extern stack_t *head;
 /**
  * strtok_custom - function to tokenize a string
  * @str: string to tokenize
