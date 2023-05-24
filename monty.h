@@ -29,6 +29,7 @@ typedef struct stack_s
 
 extern stack_t *head;
 
+
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode

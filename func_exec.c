@@ -27,33 +27,19 @@ void execute_instructions(char *file_name)
 		counter++;
 		op = strtok_custom(line, " \t\n$");
 		if (op == NULL)
-		{
 			continue;
-		}
 		instruction.opcode = op;
 		if (strcmp(op, "push") == 0)
-		{
 			instruction.f = push;
-		}
 		else if (strcmp(op, "pall") == 0)
-		{
 			instruction.f = pall;
-		}
-			else if (strcmp(op, "pint") == 0)
-		{
+		else if (strcmp(op, "pint") == 0)
 			instruction.f = pint;
-		}
 		else if (strcmp(op, "pop") == 0)
-		{
-<<<<<<< HEAD
 		instruction.f = pop;
-		}
-        else
-        {
-            printf("L%d: unknown instruction %s\n", counter, op);
-        }
-        instruction.f(&head, counter);
+		else
+			printf("L%d: unknown instruction %s\n", counter, op);
+		instruction.f(&head, counter);
 	}
 	fclose(fd);
 }
-
