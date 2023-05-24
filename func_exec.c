@@ -1,5 +1,4 @@
 #include "monty.h"
-
 /**
  * execute_instructions - Execute the Monty byte code instructions
  * @file_name: The path of file containing Monty byte code
