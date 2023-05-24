@@ -1,4 +1,5 @@
 #include "monty.h"
+extern stack_t *head;
 /**
  * main - Entry point of the program
  * @argc: The number of command-line arguments

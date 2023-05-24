@@ -10,7 +10,6 @@
 #include <ctype.h>
 #include <errno.h>
 #include <sys/stat.h>
-
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -26,7 +25,6 @@ typedef struct stack_s
 	struct stack_s *prev;
 	struct stack_s *next;
 } stack_t;
-
 extern stack_t *head;
 
 /**
@@ -50,6 +48,6 @@ void free_stack(stack_t **head);
 void pint(stack_t **head, unsigned int counter);
 char *strtok_custom(char *str, const char *delim);
 void pop(stack_t **head, unsigned int counter);
->>>>>>> 00af39fe54b9e1c37cef421c5c5c039f891cf488
+void swap(stack_t **head, unsigned int counter);
 #endif
 
