@@ -1,5 +1,9 @@
 #include "monty.h"
-
+/**
+ * swap - function that swaps two elements of a stack
+ * @counter: line number
+ * @head: pointer to stack
+ */
 void swap(stack_t **head, unsigned int counter)
 {
 	stack_t *temp;
@@ -17,6 +21,4 @@ void swap(stack_t **head, unsigned int counter)
 	(*head)->prev = temp;
 
 	*head = temp;
-
-	
-}	
+}

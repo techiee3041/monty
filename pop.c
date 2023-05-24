@@ -1,5 +1,4 @@
 #include "monty.h"
-extern stack_t *head;
 /**
  * pop - remove elemnt from on top of  stack
  * @head: head of the list
