@@ -6,7 +6,7 @@ extern stack_t *head;
  */
 void pint(stack_t **head, unsigned int counter)
 {
-	if (*head == NULL)
+	if (*head == NULL || head == NULL)
 	{
 		fprintf(stderr, "L%d: can't pint, stack empty\n", counter);
 		exit(EXIT_FAILURE);
