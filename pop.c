@@ -1,5 +1,9 @@
 #include "monty.h"
-
+/**
+ * pop - remove elemnt from on top of  stack
+ * @head: head of the list
+ * @counter: cuunts
+ */
 void pop(stack_t **head, unsigned int counter)
 {
 	stack_t *temp;
@@ -15,7 +19,7 @@ void pop(stack_t **head, unsigned int counter)
 	if (*head != NULL)
 	{
 		(*head)->prev = NULL;
-		
+
 	}
 	free(temp);
 }
