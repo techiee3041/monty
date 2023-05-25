@@ -43,8 +43,10 @@ void execute_instructions(char *file_name)
 			instruction.f = nop;
 		else if (strcmp(op, "sub") == 0)
 			instruction.f = sub;
-		else if (strcmp(op, "div_func") == 0)
+		else if (strcmp(op, "div") == 0)
 			instruction.f = div_func;
+		else if (strcmp(op, "rotl") == 0)
+			instruction.f = rotl;
 		else
 			printf("L%d: unknown instruction %s\n", counter, op);
 		instruction.f(&head, counter);
