@@ -32,6 +32,7 @@ void push(stack_t **head, unsigned int counter)
 	if (newnode == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
+
 		exit(EXIT_FAILURE);
 	}
 	newnode->n = value;

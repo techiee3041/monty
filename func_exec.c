@@ -49,5 +49,6 @@ void execute_instructions(char *file_name)
 		instruction.f(&head, counter);
 	}
 	fclose(fd);
+	free_stack(&head);
 }
 
