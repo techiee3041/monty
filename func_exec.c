@@ -40,6 +40,8 @@ void execute_instructions(char *file_name)
 			instruction.f = swap;
 		else if (strcmp(op, "add") == 0)
 			instruction.f = add;
+		else if (strcmp(op, "nop") == 0)
+			instruction.f = nop;
 		else
 			printf("L%d: unknown instruction %s\n", counter, op);
 		instruction.f(&head, counter);

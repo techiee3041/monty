@@ -51,6 +51,7 @@ char *strtok_custom(char *str, const char *delim);
 void pop(stack_t **head, unsigned int counter);
 void add(stack_t **head, unsigned int counter);
 
+void nop(stack_t **head, unsigned int counter);
 
 
 
