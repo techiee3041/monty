@@ -8,7 +8,7 @@ void swap(stack_t **head, unsigned int counter)
 {
 	stack_t *temp;
 
-	if (*head == NULL)
+	if (counter < 2)
 	{
 		printf("L%d: can't swap, stack too short", counter);
 		exit(EXIT_FAILURE);
