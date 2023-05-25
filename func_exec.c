@@ -10,9 +10,8 @@
 void execute_instructions(char *file_name)
 {
 	FILE *fd;
-	char line[100];
+	char line[100], *op;
 	unsigned int counter = 0;
-	char *op;
 	struct instruction_s instruction;
 
 	fd = fopen(file_name, "r");
