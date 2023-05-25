@@ -42,6 +42,8 @@ void execute_instructions(char *file_name)
 			instruction.f = add;
 		else if (strcmp(op, "nop") == 0)
 			instruction.f = nop;
+		else if (strcmp(op, "sub") == 0)
+			instruction.f = sub;
 		else
 			printf("L%d: unknown instruction %s\n", counter, op);
 		instruction.f(&head, counter);
