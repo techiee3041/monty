@@ -44,7 +44,7 @@ typedef struct instruction_s
 void pall(stack_t **head, unsigned int counter);
 void push(stack_t **head, unsigned int line_number);
 void execute_instructions(char *file_name);
-void free_stack(stack_t **head);
+void free_stack(stack_t *head);
 void pint(stack_t **head, unsigned int counter);
 char *strtok_custom(char *str, const char *delim);
 void pop(stack_t **head, unsigned int counter);
