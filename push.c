@@ -60,5 +60,5 @@ void pall(stack_t **head, unsigned int counter)
 	}
 
 	(void)counter;
-	
+
 }
