@@ -55,6 +55,7 @@ void execute_instructions(char *file_name)
 	}
 	free_stack(head);
 	free(line);
+	free(fd);
 	fclose(fd);
 }
 
