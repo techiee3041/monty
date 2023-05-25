@@ -17,7 +17,7 @@ void push(stack_t **head, unsigned int counter)
 		fprintf(stderr, "L%d: usage: push integer\n", counter);
 		exit(EXIT_FAILURE);
 	}
-	if (!isdigit(arg[0]) && arg[0] != '-' && arg[0] != '+')
+	if (!isinteger(arg[0]) && arg[0] != '-' && arg[0] != '+')
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", counter);
 		exit(EXIT_FAILURE);
