@@ -42,7 +42,7 @@ void push(stack_t **head, unsigned int counter)
 	{
 		(*head)->prev = newnode;
 	}
-	
+
 	*head = newnode;
 }
 /**
