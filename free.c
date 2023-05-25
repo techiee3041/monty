@@ -14,4 +14,5 @@ void free_stack(stack_t **head)
 		free(current);
 		current = next;
 	}
+	free(*head);
 }
