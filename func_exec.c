@@ -47,6 +47,8 @@ void execute_instructions(char *file_name)
 			instruction.f = div_func;
 		else if (strcmp(op, "rotl") == 0)
 			instruction.f = rotl;
+		else if (strcmp(op, "rotr") == 0)
+			instruction.f = rotl;
 		else
 			printf("L%d: unknown instruction %s\n", counter, op);
 		instruction.f(&head, counter);
