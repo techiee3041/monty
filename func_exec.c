@@ -10,7 +10,7 @@
 void execute_instructions(char *file_name)
 {
 	FILE *fd;
-	char *line = NULL, *op;
+	char line[100], *op;
 	unsigned int counter = 0;
 	struct instruction_s instruction;
 
@@ -54,8 +54,6 @@ void execute_instructions(char *file_name)
 		instruction.f(&head, counter);
 	}
 	free_stack(head);
-	free(line);
-	free(fd);
 	fclose(fd);
 }
 
