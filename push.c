@@ -10,7 +10,7 @@ void push(stack_t **head, unsigned int counter)
 	struct stack_s *newnode;
 	int value;
 
-	arg = strtok(NULL, " \t\n$");
+	arg = strtok(NULL, "\n ");
 	if (arg == NULL)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", counter);
@@ -60,4 +60,5 @@ void pall(stack_t **head, unsigned int counter)
 	}
 
 	(void)counter;
+	
 }

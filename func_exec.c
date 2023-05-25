@@ -24,7 +24,7 @@ void execute_instructions(char *file_name)
 	while (fgets(line, sizeof(line), fd))
 	{
 		counter++;
-		op = strtok_custom(line, " \t\n$");
+		op = strtok_custom(line, "\n ");
 		if (op == NULL)
 		continue;
 			instruction.opcode = op;
