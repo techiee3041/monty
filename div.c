@@ -18,6 +18,7 @@ void div_func(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE);
 	}
 
+
 	if ((*head)->n == 0)
 	{
 		fprintf(stderr, "L%d: division by zero\n", counter);
