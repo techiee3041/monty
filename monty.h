@@ -53,7 +53,8 @@ void sub(stack_t **head, unsigned int counter);
 void nop(stack_t **head, unsigned int counter);
 void div_func(stack_t **head, unsigned int counter);
 int isinteger(char c);
-
+void rotl(stack_t **head, unsigned int counter);
+void rotr(stack_t **head, unsigned int counter);
 void swap(stack_t **head, unsigned int counter);
 #endif
 
